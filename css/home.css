@@ -1,0 +1,23 @@
+@import 'estiloGeneral.css';
+
+.contenido-principal {
+    max-width: 50%;
+    margin:0 auto;
+    margin-bottom: 2rem;
+}
+.sidebar {
+    background-color: #e5e5e5;
+    padding: 2rem;
+}
+@media screen and (min-width:768px) {
+    .contenido {
+        display: flex;
+    }
+    .contenido-principal {
+        order: 2;
+    }
+    .sidebar {
+        order:1;
+        flex: 0 0 30%;
+    }
+}

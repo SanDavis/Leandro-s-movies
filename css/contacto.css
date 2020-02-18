@@ -1,0 +1,207 @@
+@import 'estiloGeneral.css';
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color: #666666;
+	margin: 0px;
+	transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	/* font-family: Oswald-Regular; */
+	font-size: 14px;
+	line-height: 1.7;
+	color: #666666;
+	margin: 0px;
+}
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    appearance: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+button {
+	outline: none !important;
+	border: none;
+	/* background: transparent; */
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+.contenedor-principal {
+  width: 100%;  
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+
+.div-contenedor {
+  width: 550px;
+  background: transparent;
+  padding: 30px 0 80px 0;
+}
+
+
+
+.form-contacto {
+  width: 100%;
+}
+
+.form-contacto-title {
+  display: block;
+  /* font-family: Oswald-Medium; */
+  font-size: 30px;
+  color: #43383e;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 35px;
+}
+
+
+.div-input {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 17px;
+}
+
+.label-entrada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 62px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  font-size: 18px;
+  color: #999999;
+}
+
+.entrada {
+  display: block;
+  width: 100%;
+  background: transparent;
+  /* font-family: Oswald-Medium; */
+  font-size: 15px;
+  color: #43383e;
+  line-height: 1.2;
+  padding: 0 5px;
+}
+
+
+input.entrada {
+  height: 62px;
+  padding: 0 20px 0 58px;
+}
+
+
+textarea.entrada {
+  min-height: 199px;
+  padding: 19px 20px 0 23px;
+}
+
+.form-contacto-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 160px;
+  height: 62px;
+  font-size: 16px;
+  line-height: 1.2;
+  
+}
+
+.form-contacto-btn:hover{
+  cursor: pointer;
+}
+
+.div-contenedor-form-btn:hover .form-contacto-bgbtn {
+  left: 0;
+}
+
+.validar-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  max-width: 70%;
+  background-color: #fff;
+  border: 1px solid #c80000;
+  border-radius: 2px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2px;
+  pointer-events: none;
+
+  /* font-family: Oswald-Regular; */
+  color: #c80000;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: left;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+.alert-validate::before {
+  visibility: visible;
+  opacity: 1;
+}
+
+iframe{
+  height: 30%;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 10%;
+}

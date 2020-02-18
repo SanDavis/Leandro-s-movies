@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contacto</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/buscador.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="home.html" class="logo">LM</a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Películas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="#footer">Sobre mí</a></li>
+        </ul>
+      </header>
+
+	<div class="contenedor-principal">
+		<div class="div-contenedor">
+			<form class="form-contacto validar-form">
+					<legend>Contáctanos</legend>
+					<div class="div-input validar-input" data-validate="Nombre inválido">
+						<input class="entrada" id="name" type="text" name="name" placeholder="Nombre" >
+						<label class="label-entrada" for="name">
+							<i class="fa fa-user" style="font-size:1.4em;"></i>
+						</label>
+					</div>
+	
+					<div class="div-input validar-input" data-validate = "Email inválido: ex@abc.xyz">
+						<input class="entrada" id="email" type="text" name="email" placeholder="Email">
+						<label class="label-entrada" for="email">
+							<i class="fa fa-at" style="font-size:1.4em;"></i>
+						</label>
+					</div>
+	
+					<div class="div-input validar-input" data-validate = "Teléfono inválido">
+						<input class="entrada" id="phone" type="text" name="phone" placeholder="Teléfono">
+						<label class="label-entrada" for="phone">
+							<i class="fa fa-phone" style="font-size:1.4em;"></i>
+						</label>
+					</div>
+	
+					<div class="div-input validar-input" data-validate = "Mensaje obligatorio">
+						<textarea class="entrada" name="message" placeholder="Tu mensaje..."></textarea>
+					</div>
+
+				<input type="submit" value="Enviar" class="form-contacto-btn">
+			</form>
+		</div>
+    </div>
+    
+    <footer class="footer" id="footer">
+        <div class="contenedor">
+            <div class="widget">
+                <h3>Contacto</h3>
+                <p>Tel: 31039141</p>
+                <p>Dirección del Estudio</p>
+                <p>New York</p>
+            </div>
+            <div class="widget">
+                <h3>Ubicación</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46486.91698136271!2d-2.9685838313366535!3d43.263318158821605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4e27664b89b9%3A0x6534acc41e95a645!2sBilbao%2C%20Vizcaya!5e0!3m2!1ses!2ses!4v1576858297702!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+            <div class="redes">
+                <h3>Nuestrs redes</h3>
+                <div class="social">
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square" style="font-size:2.5em;"></i></a>
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-twitter-square" style="font-size:2.5em;"></i></a>
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-instagram" style="font-size:2.5em;"></i></a>
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-youtube" style="font-size:2.5em;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	<script src="../js/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../js/contacto.js"></script>
+</body>
+</html>

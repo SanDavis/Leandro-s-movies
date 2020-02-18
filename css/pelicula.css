@@ -1,0 +1,35 @@
+/** CSS solo para lo referente a la presentacion de las peliculas **/
+
+
+@media (min-width:768px) {
+    .listado {
+        display: grid;
+        grid-auto-rows: max-content;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+    }
+    .elemento:nth-child(3) {
+        grid-row-end: span 2;
+    }
+}
+
+.pelicula {
+    width: 80%;
+    height: 80%;
+    padding: 2em;
+}
+
+.imagen {
+    border: 1px thick var(--secundario);
+    border-radius: 8%;
+    -webkit-transition: box-shadow .3s;
+    transition: box-shadow .3s;
+}
+
+.imagen:hover {
+    box-shadow: 0 0 30px black;
+}
+
+figcaption{
+    font-size: 1.5rem;
+}

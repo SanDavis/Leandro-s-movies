@@ -1,0 +1,39 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 80%;
+  margin: 2rem auto;
+  background: rgb(233, 231, 217);
+  background: linear-gradient(90deg, rgba(233, 231, 217, 1) 33%, rgba(200, 196, 189, 1) 100%, rgba(150, 116, 68, 1) 100%);
+}
+
+.contenedor{
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.negrita{
+  text-align: justify;
+}
+
+img{
+  border-radius: 10%;
+  width: 35%;
+  transition:all 0.3s ease;
+}
+
+img:hover{
+  transform: scale(.8);
+}
+
+#poster{
+  height: 7%;
+}
+
+p{
+  font-family: cursive;
+}
